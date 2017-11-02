@@ -5,7 +5,7 @@
 # Site
 title: Cliff的笔记
 subtitle: 以程序员的名义
-description:
+description: 个人开发过程的经验心得
 author: Cliff
 avatar: /images/avatar.png
 language: zh-Hans
@@ -29,7 +29,7 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: :year-:month-:day-:title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
