@@ -19,15 +19,15 @@ override: false
 # For example, you put your favicons into `hexo-site/source/images` directory.
 # Then need to rename & redefine they on any other names, otherwise icons from Next will rewrite your custom icons in Hexo.
 favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
-  apple_touch_icon: /images/apple-touch-icon-next.png
-  safari_pinned_tab: /images/logo.svg
-  #android_manifest: /images/manifest.json
-  #ms_browserconfig: /images/browserconfig.xml
+  small: /images/favicon-16x16.png
+  medium: /images/favicon-32x32.png
+  apple_touch_icon: /images/apple-touch-icon.png
+  safari_pinned_tab: /images/safari-pinned-tab.svg
+  android_manifest: /images/manifest.json
+  ms_browserconfig: /images/browserconfig.xml
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords: "Cliff, Blog, 笔记"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -37,7 +37,7 @@ rss:
 footer:
   # Specify the date when the site was setup.
   # If not defined, current year will be used.
-  #since: 2015
+  since: 2013
 
   # Icon between year and copyright info.
   icon: user
@@ -581,7 +581,7 @@ algolia_search:
 # Local search
 # Dependencies: https://github.com/flashlab/hexo-generator-search
 local_search:
-  enable: false
+  enable: true
   # if auto, trigger search by changing input
   # if manual, trigger search by pressing enter key or search button
   trigger: auto
