@@ -6,7 +6,7 @@ categories:
 tags:
   - 互联网
   - 移动应用
-  - FirefoxOS
+  - Firefox OS
   - SyncML
 ---
 工作要求要实现Firefox OS上的SyncML协议，找了一下居然没有现成的开源js实现。只好几方面下手，一边学习协议，一边尝试参考其他实现代码。这就找到了[Funambol的实现](http://sourceforge.net/projects/funambol/files/)。实际上Funambol的实现也有些年头没更新了，说明一直没人把这东西当回事。

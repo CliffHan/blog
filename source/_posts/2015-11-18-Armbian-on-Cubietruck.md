@@ -7,7 +7,6 @@ tags:
   - 嵌入式系统
   - 服务器部署
   - Cubian
-  - Cubieboard
   - Cubietruck
   - Debian
 ---
