@@ -105,4 +105,8 @@ ps | grep "aria2c"
 
 应用运行之后，默认会监听6800端口，监听地址是类似 http://ip_of_router:6800/jsonrpc 这样的路径。客户端可以使用Web应用，比如我用的[这个](http://ariang.mayswind.net/latest/)，或者[手机端应用](https://play.google.com/store/apps/details?id=net.sf.aria2)，甚至[Chrome插件](https://chrome.google.com/webstore/detail/aria2c-integration/edcakfpjaobkpdfpicldlccdffkhpbfk)。连接的设置无非不过就是监听地址，再加上rpc-secret中设置的密码。连接成功后就可以通过客户端添加下载链接了。
 
-P.S. 之前以为可以用DDNS连接，但后来发现不行，原因我猜测是因为防火墙不开放6800端口，做端口转发也无法使用本机IP。所以现在只能VPN连接后用局域网地址连接。希望R8500的LEDE早日出现吧。
+这个做法目前有几个明显缺陷：
+1. 只能用局域网IP访问，外网不可。原因应该是防火墙。由于iptables不可用（缺少libip4tc.so.0），R8500的文件系统又不可写，所以无法简单修复此问题。
+2. 无法自动启动，如果R8500重启，只能手动telnet再次启动。即使是写了脚本也很麻烦。
+
+我已经准备买入NAS来解决此问题了。让R8500干好它的本职工作就行了。
